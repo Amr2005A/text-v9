@@ -14,3 +14,6 @@ Route::apiResource("categories", CategoryController::class);
 Route::post('register',[UserController::class,'register']);
 Route::post('login',[UserController::class,'login']);
 Route::post('logout',[UserController::class,'logout'])->middleware('auth:sanctum');
+
+
+//test
