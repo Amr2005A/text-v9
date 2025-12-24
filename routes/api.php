@@ -8,7 +8,7 @@ use App\Http\Controllers\UserController;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
-
+//test
 Route::apiResource("categories", CategoryController::class);
 
 Route::post('register',[UserController::class,'register']);
